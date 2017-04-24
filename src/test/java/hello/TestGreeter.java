@@ -80,4 +80,16 @@ public class TestGreeter {
         assertEquals(g.sayHello(), "Hello Darth Vader! Number is Evil!");
 
     }
+
+    @Test
+
+    public void newTestKRGreeterFail()
+    {
+        g.setName("Giygas");
+
+        assertEquals(g.getName(), "Giygas");
+        assertEquals(g.getId(), 42);
+        g.setId(0);
+        assertEquals(g.sayHello(), "Hello Giygas! Number is Life!");
+    }
 }
