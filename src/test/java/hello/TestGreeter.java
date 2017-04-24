@@ -58,6 +58,15 @@ public class TestGreeter {
    }
 
 
+   @Test
+
+   public void newtestcbfGreeterFail()
+   {
+      g.setName("Gollum");
+      assertEquals(g.getName(),"Smeagol");
+      assertEquals(g.sayHello(),"My precious...");
+   }
+
 
    @Test
 
