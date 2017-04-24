@@ -20,11 +20,11 @@ public class TestGreeter {
 
    private Greeter g;
 
-	
+
 
    @Before
 
-   public void setUp() throws Exception 
+   public void setUp() throws Exception
 
    {
 
@@ -36,7 +36,7 @@ public class TestGreeter {
 
    @Test
 
-   public void testGreeterEmpty() 
+   public void testGreeterEmpty()
 
    {
 
@@ -46,11 +46,11 @@ public class TestGreeter {
 
    }
 
-	
+
 
    @Test
 
-   public void testGreeter() 
+   public void testGreeter()
 
    {
 
@@ -59,6 +59,30 @@ public class TestGreeter {
       assertEquals(g.getName(),"World");
 
       assertEquals(g.sayHello(),"Hello World!");
+
+   }
+
+   @Test
+
+   public void newtestckcGreeterPass()
+
+   {
+
+      g.setName("Chris!");
+
+      assertEquals(g.sayHello(),"Hello Chris!");
+
+   }
+
+   @Test
+
+   public void newtestckcGreeterFail()
+
+   {
+
+      g.setName("Success!");
+
+      assertEquals(g.getName(),"Chris!");
 
    }
 
