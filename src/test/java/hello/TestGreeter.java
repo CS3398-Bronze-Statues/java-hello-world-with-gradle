@@ -74,6 +74,16 @@ public class TestGreeter {
 
    }
 
+   @Test
 
+   public void newtestckcGreeterFail()
+
+   {
+
+      g.setName("Success!");
+
+      assertEquals(g.getName(),"Chris!");
+
+   }
 
 }
