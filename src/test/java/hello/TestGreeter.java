@@ -10,11 +10,6 @@ public class TestGreeter {
 
    private Greeter g;
 	
-   @Before
-   public void setUp() throws Exception 
-   {
-      g = new Greeter();
-   }
 
    @Test
    public void testGreeterEmpty() 
