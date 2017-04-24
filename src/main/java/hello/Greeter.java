@@ -7,10 +7,11 @@ public class Greeter {
 
 
   private String name = "";
+  private String message = " Number is Life!";
+  private int id = 42;
 
 
-
-  public String getName() 
+  public String getName()
 
   {
 
@@ -18,9 +19,13 @@ public class Greeter {
 
   }
 
+  public int getId()
+  {
+      return id;
+  }
 
 
-  public void setName(String name) 
+  public void setName(String name)
 
   {
 
@@ -28,13 +33,17 @@ public class Greeter {
 
   }
 
+  public void setId(int id)
+  {
+      this.id = id;
+  }
 
 
-  public String sayHello() 
+  public String sayHello()
 
   {
 
-  	if (name == "") 
+  	if (name == "")
 
     {
 
@@ -42,11 +51,15 @@ public class Greeter {
 
     }
 
-    else 
+    else
 
     {
+       if(id != 42)
+       {
+         message = " Number is Evil!";
+       }
 
-       return "Hello " + name + "!";
+       return "Hello " + name + "!" + message;
 
     }
 

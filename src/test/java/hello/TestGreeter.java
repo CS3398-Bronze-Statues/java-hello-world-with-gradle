@@ -58,7 +58,7 @@ public class TestGreeter {
 
       assertEquals(g.getName(),"World");
 
-      assertEquals(g.sayHello(),"Hello World!");
+      assertEquals(g.sayHello(),"Hello World! Number is Life!");
 
    }
 
@@ -69,7 +69,15 @@ public class TestGreeter {
         g.setName("Kevin");
 
         assertEquals(g.getName(), "Kevin");
+        assertEquals(g.getId(), 42);
+        assertEquals(g.sayHello(), "Hello Kevin! Number is Life!");
+/*
+        g.setId(0);
+        g.setName("Darth Vader");
 
-        assertEquals(g.sayHello(), "Hello Kevin!");
+        assertEquals(g.getName(), "Darth Vader");
+        assertEquals(g.getId(), 0);
+        assertEquals(g.sayHello(), "Hello Darth Vader! Number is Evil!");
+        */
     }
 }
