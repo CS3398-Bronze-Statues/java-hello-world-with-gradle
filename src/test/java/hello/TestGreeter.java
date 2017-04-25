@@ -28,7 +28,7 @@ public class TestGreeter {
         
     }
     
-    /*
+    
     //Failure
     @Test
     public void newtestMCSGreeterFail()
@@ -36,7 +36,7 @@ public class TestGreeter {
         g.setName("failure");
         assertEquals(g.getName(), "MCSTestFailure");
     }
-    */
+    
     
    @Test
     public void testGreeter()    
